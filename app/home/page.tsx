@@ -1,6 +1,4 @@
 "use client"
-
-import { ArrowBigRight, UserRoundPlus } from 'lucide-react';
 import { FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation'
 import InviteGuessModal from './components/invite-guests-modal';

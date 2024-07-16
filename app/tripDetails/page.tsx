@@ -1,8 +1,8 @@
+import LocationInfo from "./components/location-Info";
+
 const TripDetails = () => {
-    return(
-        <div>
-            <h1>olá mundo!</h1>
-        </div>
+    return (
+        <LocationInfo/>
     )
 }
 
