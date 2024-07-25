@@ -1,4 +1,5 @@
 import { Link2, Plus } from "lucide-react"
+import ManageGuests from "./manage-guests"
 
 const ImportantLinks = () => {
     return (
@@ -30,6 +31,7 @@ const ImportantLinks = () => {
                     Adicionar link
                 </button>
             </div>
+            <ManageGuests/>
         </div>
     )
 }
