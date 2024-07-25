@@ -1,13 +1,28 @@
-import { CircleCheck, Link2, Plus } from "lucide-react";
+"use client"
+
+import { CircleCheck, Plus } from "lucide-react";
 import ImportantLinks from "./important-links";
+import { useState } from "react";
+import CreateActivity from "./create-activity-modal";
 
 const ActivitySection = () => {
+
+    const [isModalActivity, setModalActivity] = useState(false)
+
+    const openModalActivity = () => {
+        setModalActivity(true)
+    }
+
+    const closeModalActivity = () => {
+        setModalActivity(false)
+    }
+
     return (
         <main className="flex gap-16">
             <div className="flex-1">
                 <div className="flex items-center justify-between mb-4">
                     <h2 className="text-3xl font-semibold">Atividades</h2>
-                    <button className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center gap-2 hover:bg-lime-400">
+                    <button onClick={openModalActivity} className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center gap-2 hover:bg-lime-400">
                         <Plus className="size-5" />
                         Cadastrar atividade
                     </button>
@@ -45,6 +60,10 @@ const ActivitySection = () => {
                 </div>
             </div>
             <ImportantLinks />
+
+            {isModalActivity && (
+                <CreateActivity closeModalActivity={closeModalActivity} />
+            )}
         </main>
     );
 };
