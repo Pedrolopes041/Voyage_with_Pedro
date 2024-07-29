@@ -9,7 +9,7 @@ interface ConfirmTripModalProps {
 
 const ConfirmTripModal = ({addNewEmailToInvite, closeConfirmModal, handleSubmitConfirmTrip}: ConfirmTripModalProps) => {
     return (
-        <div className='fixed inset-0 bg-black/60 flex items-center justify-center'>
+        <div className='fixed inset-0 bg-black/60 flex items-center justify-center p-4'>
             <div className='w-[640px] rounded-xl py-5 px-6 bg-zinc-900'>
                 <div className='flex items-center justify-between'>
                     <h2 className='text-lg font-semibold'>Confirmar criação de viagem</h2>
@@ -28,7 +28,7 @@ const ConfirmTripModal = ({addNewEmailToInvite, closeConfirmModal, handleSubmitC
                             <input
                                 type='email'
                                 name='email'
-                                placeholder='Seu nome completo' className="bg-transparent text-lg placeholder-zinc-400 outline-none" />
+                                placeholder='Seu nome completo' className="bg-transparent text-sm lg:text-lg placeholder-zinc-400 outline-none" />
                         </div>
                     </div>
                     <div className='flex justify-between items-center bg-zinc-950 rounded-md border border-zinc-800 mt-4'>
@@ -37,7 +37,7 @@ const ConfirmTripModal = ({addNewEmailToInvite, closeConfirmModal, handleSubmitC
                             <input
                                 type='email'
                                 name='email'
-                                placeholder='Digite o e-mail do convidado' className="bg-transparent text-lg placeholder-zinc-400 outline-none" />
+                                placeholder='Digite o e-mail do convidado' className="bg-transparent text-sm lg:text-lg placeholder-zinc-400 outline-none" />
                         </div>
                     </div>
                     <button

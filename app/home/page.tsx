@@ -73,15 +73,15 @@ const Home = () => {
     }
 
     return (
-        <div className="h-screen flex items-center justify-center">
-            <div className="px-6 text-center space-y-10">
+        <div className="h-screen flex justify-center items-center">
+            <div className="text-center">
                 <div className="flex flex-col items-center gap-3">
                     <h1 className='font-semibold text-xl'>Voyage with Pedro</h1>
                     <p className="text-zinc-300 text-lg">
                         Convide seus amigos e planeje sua próxima viagem!
                     </p>
                 </div>
-                <div className='space-y-2'>
+                <div className='mt-6 p-2'>
                     <InputDestination
                         closeGuessInput={closeGuessInput}
                         isInputGuess={isInputGuess}
@@ -96,7 +96,7 @@ const Home = () => {
                     )}
                 </div>
 
-                <p className="text-sm text-zinc-500">
+                <p className="text-sm text-zinc-500 mt-6">
                     Ao planejar sua viagem pelo Voyage with Pedro você automaticamente concorda
                     <br /> com os nossos{' '}
                     <a className="text-zinc-300 underline">termos de uso</a> e{' '}
