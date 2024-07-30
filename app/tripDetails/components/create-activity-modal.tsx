@@ -6,7 +6,7 @@ interface CreateActivityProps {
 
 const CreateActivity = ({ closeModalActivity }: CreateActivityProps) => {
     return (
-        <div className='fixed inset-0 bg-black/60 flex items-center justify-center'>
+        <div className='fixed inset-0 bg-black/60 flex items-center justify-center p-4'>
             <div className='w-[640px] rounded-xl py-5 px-6 bg-zinc-900'>
                 <div className='flex items-center justify-between'>
                     <h2 className='text-lg font-semibold'>Cadastrar atividade</h2>
