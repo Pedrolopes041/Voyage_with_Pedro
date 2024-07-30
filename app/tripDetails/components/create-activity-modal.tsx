@@ -25,7 +25,7 @@ const CreateActivity = ({ closeModalActivity }: CreateActivityProps) => {
                             <input
                                 type='email'
                                 name='email'
-                                placeholder='Qual é a atividade?' className="bg-transparent text-lg placeholder-zinc-400 outline-none" />
+                                placeholder='Qual é a atividade?' className="bg-transparent text-sm lg:text-lg placeholder-zinc-400 outline-none" />
                         </div>
                     </div>
                     <div className='flex justify-between items-center bg-zinc-950 rounded-md border border-zinc-800 mt-4'>
@@ -35,12 +35,12 @@ const CreateActivity = ({ closeModalActivity }: CreateActivityProps) => {
                                 type='datetime-local'
                                 name='datetime'
                                 placeholder="Data e Hora da atividade"
-                                className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full [color-scheme:dark]" />
+                                className="bg-transparent text-sm lg:text-lg placeholder-zinc-400 outline-none w-full [color-scheme:dark]" />
                         </div>
                     </div>
                     <button
                         type='submit'
-                        className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center justify-center w-full mt-3 gap-2 hover:bg-lime-400">
+                        className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center justify-center w-full mt-3 gap-2 hover:bg-lime-400 text-sm lg:text-lg">
                         Salvar atividade
                     </button>
                 </form>
