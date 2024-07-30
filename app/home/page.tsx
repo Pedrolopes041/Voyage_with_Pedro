@@ -10,8 +10,7 @@ const Home = () => {
     const [isInputGuess, setInputGuess] = useState(false);
     const [isModalGuess, setModalGuess] = useState(false);
     const [isEmailGuess, setEmailGuess] = useState([
-        'pedrolopes@gmail.com',
-        'mery123@gmail.com'
+        'pedrolopes@gmail.com'
     ])
     const [isConfirmTrip, setConfirmTrip] = useState(false)
 
@@ -81,7 +80,7 @@ const Home = () => {
                         Convide seus amigos e planeje sua próxima viagem!
                     </p>
                 </div>
-                <div className='mt-6 p-2'>
+                <div className='mt-6'>
                     <InputDestination
                         closeGuessInput={closeGuessInput}
                         isInputGuess={isInputGuess}
@@ -96,7 +95,7 @@ const Home = () => {
                     )}
                 </div>
 
-                <p className="text-sm text-zinc-500 mt-6">
+                <p className="text-xs lg:text-sm text-zinc-500 mt-6 p-2">
                     Ao planejar sua viagem pelo Voyage with Pedro você automaticamente concorda
                     <br /> com os nossos{' '}
                     <a className="text-zinc-300 underline">termos de uso</a> e{' '}

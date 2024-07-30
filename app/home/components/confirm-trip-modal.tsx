@@ -43,7 +43,7 @@ const ConfirmTripModal = ({addNewEmailToInvite, closeConfirmModal, handleSubmitC
                     <button
                         onClick={handleSubmitConfirmTrip}
                         type='submit'
-                        className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center justify-center w-full mt-3 gap-2 hover:bg-lime-400">
+                        className="bg-lime-300 text-lime-950 rounded-lg px-5 py-2 font-medium flex items-center justify-center w-full mt-3 gap-2 hover:bg-lime-400 text-sm lg:text-lg">
                         Confirmar criação de viagem
                         <Plus className='size-5' />
                     </button>
