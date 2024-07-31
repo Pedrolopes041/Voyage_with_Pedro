@@ -22,7 +22,7 @@ const ActivitySection = () => {
             <div className="flex-1">
                 <div className="flex items-center justify-between mb-4">
                     <h2 className="text-xl lg:text-3xl font-semibold">Atividades</h2>
-                    <button onClick={openModalActivity} className="bg-lime-300 text-lime-950 rounded-lg font-medium text-base flex items-center gap-2 p-1 lg:px-2 lg:py-2 hover:bg-lime-400">
+                    <button onClick={openModalActivity} className="bg-lime-300 text-lime-950 rounded-lg font-medium text-base flex items-center gap-2 p-2 lg:px-2 lg:py-2 hover:bg-lime-400">
                         <Plus className="size-5" />
                         Cadastrar atividade
                     </button>

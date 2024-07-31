@@ -87,11 +87,13 @@ const Home = () => {
                         openGuessInput={openGuessInput}
                     />
                     {isInputGuess && (
-                        <InputInvite
-                            isEmailGuess={isEmailGuess}
-                            openConfirmModal={openConfirmModal}
-                            openGuessModal={openGuessModal}
-                        />
+                        <div className='p-2'>
+                            <InputInvite
+                                isEmailGuess={isEmailGuess}
+                                openConfirmModal={openConfirmModal}
+                                openGuessModal={openGuessModal}
+                            />
+                        </div>
                     )}
                 </div>
 
