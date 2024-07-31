@@ -1,7 +1,20 @@
-import { Link2, Plus, Trash2 } from "lucide-react"
+import { Plus, Trash2 } from "lucide-react"
 import ManageGuests from "./manage-guests"
+import { useState } from "react"
+import AddLink from "./add-link"
 
 const ImportantLinks = () => {
+
+    const [isModalAddLink, setModalAddLink] = useState(false)
+
+    const openModalAddLink = () => {
+        setModalAddLink(true)
+    }
+
+    const closeModalAddLink = () => {
+        setModalAddLink(false)
+    }
+
     return (
         <div className="w-full space-y-6 lg:w-80">
             <div className="space-y-6">
@@ -14,7 +27,7 @@ const ImportantLinks = () => {
                                 https://www.airbnb.com.br
                             </a>
                         </div>
-                        <Trash2 className="size-5 text-red-800"/>
+                        <Trash2 className="size-5 text-red-800" />
                     </div>
                     <div className="flex items-center justify-between gap-4">
                         <div className="space-y-1.5">
@@ -23,15 +36,19 @@ const ImportantLinks = () => {
                                 https://www.airbnb.com.br
                             </a>
                         </div>
-                        <Trash2 className="size-5 text-red-800"/>
+                        <Trash2 className="size-5 text-red-800" />
                     </div>
                 </div>
-                <button className="bg-zinc-800 w-full text-zinc-200 rounded-lg px-5 py-2 font-medium flex items-center justify-center gap-2 hover:bg-zinc-700">
+                <button onClick={openModalAddLink} className="bg-zinc-800 w-full text-zinc-200 rounded-lg px-5 py-2 font-medium flex items-center justify-center gap-2 hover:bg-zinc-700">
                     <Plus className="size-5" />
                     Adicionar link
                 </button>
             </div>
-            <ManageGuests/>
+            <ManageGuests />
+
+            {isModalAddLink && (
+                <AddLink closeModalAddLink={closeModalAddLink} />
+            )}
         </div>
     )
 }
